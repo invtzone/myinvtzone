@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="شريكك الاستراتيجي لتأسيس وإدارة الشركات بخدمات متكاملة وشاملة">
+    <title>InvtZone - موقع متعدد اللغات</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #2c3e50;
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+        }
+        .language-switch {
+            margin: 10px auto;
+            text-align: center;
+        }
+        .language-switch button {
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .language-switch button:hover {
+            background-color: #2ecc71;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #34495e;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+    <script>
+        const content = {
+            ar: {
+                welcome: "شريكك الاستراتيجي لتأسيس وإدارة الشركات",
+                about: "من نحن؟",
+                services: "خدماتنا",
+                locations: "الدول التي نغطيها",
+                contact: "تواصل معنا",
+                details: "شركة InvtZone تقدم حلولاً متكاملة لتأسيس وإدارة الشركات."
+            },
+            en: {
+                welcome: "Your Strategic Partner for Business Establishment and Management",
+                about: "About Us",
+                services: "Our Services",
+                locations: "Countries We Cover",
+                contact: "Contact Us",
+                details: "InvtZone offers comprehensive solutions for business establishment and management."
+            },
+            zh: {
+                welcome: "您的企业成立和管理战略合作伙伴",
+                about: "关于我们",
+                services: "我们的服务",
+                locations: "我们覆盖的国家",
+                contact: "联系我们",
+                details: "InvtZone 提供全面的企业成立和管理解决方案。"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.getElementById("welcome").innerText = content[lang].welcome;
+            document.getElementById("about").innerText = content[lang].about;
+            document.getElementById("services").innerText = content[lang].services;
+            document.getElementById("locations").innerText = content[lang].locations;
+            document.getElementById("contact").innerText = content[lang].contact;
+            document.getElementById("details").innerText = content[lang].details;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="welcome">شريكك الاستراتيجي لتأسيس وإدارة الشركات</h1>
+    </header>
+    <nav>
+        <a href="#about" id="about">من نحن؟</a>
+        <a href="#services" id="services">خدماتنا</a>
+        <a href="#locations" id="locations">الدول التي نغطيها</a>
+        <a href="#contact" id="contact">تواصل معنا</a>
+    </nav>
+    <div class="language-switch">
+        <button onclick="switchLanguage('ar')">العربية</button>
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('zh')">中文</button>
+    </div>
+    <div class="container">
+        <section>
+            <h2 id="about">من نحن؟</h2>
+            <p id="details">شركة InvtZone تقدم حلولاً متكاملة لتأسيس وإدارة الشركات.</p>
+        </section>
+        <section>
+            <h2 id="services">خدماتنا</h2>
+            <ul>
+                <li>تأسيس الشركات والاستشارات</li>
+                <li>الخدمات الإدارية</li>
+                <li>خدمات الموارد البشرية</li>
+                <li>التسويق وتطوير العلامة التجارية</li>
+                <li>الزكاة والضريبة والجمارك</li>
+                <li>الخدمات القانونية</li>
+                <li>إدارة المنصات الحكومية</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="locations">الدول التي نغطيها</h2>
+            <ul>
+                <li>المملكة العربية السعودية</li>
+                <li>الإمارات العربية المتحدة</li>
+                <li>سلطنة عمان</li>
+                <li>جمهورية مصر العربية</li>
+                <li>المملكة المتحدة</li>
+                <li>الولايات المتحدة الأمريكية</li>
+                <li>البحرين</li>
+                <li>الصين</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="contact">تواصل معنا</h2>
+            <p>البريد الإلكتروني: info@invtzone.com</p>
+            <p>الهاتف: +966-XXX-XXXX</p>
+            <p>الموقع: المملكة العربية السعودية</p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 InvtZone. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
